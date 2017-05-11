@@ -1,32 +1,37 @@
 .floating-label-form-group {
-  border-bottom: 1px solid #ccc;
   margin-bottom: 0;
   position: relative;
-  padding-bottom: 0.5em;
 }
 
 .floating-label-form-group input,
 .floating-label-form-group textarea {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
   background: none;
-  border: none;
+  height: 50px;
   border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
   box-shadow: none !important;
   position: relative;
   z-index: 1;
-  font-size: 1.5em;
   resize: none;
 }
   
+
+.floating-label-form-group input:focus,
+.floating-label-form-group textarea:focus {
+  border: 1px solid #888888;
+}
+  
 .floating-label-form-group label {
+  text-align: left;
   display: block;
   position: relative;
   top: 2em;
   opacity: 0;
   z-index: 0;
-  font-size: 0.85em;
-  line-height: 1.764705882em;
+  /*font-size: 0.75em;*/
+  line-height: 2em;
   vertical-align: middle;
   vertical-align: baseline;
   margin: 0;
@@ -47,9 +52,9 @@
 }
 
 .floating-label-form-group-with-focus label {
-  color: blue;
+  color: black;
 }
 
 form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #ccc;
+  /*border-top: 1px solid #ccc;*/
 }
